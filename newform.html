@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Forms</title>
+</head>
+
+<body>
+
+<h3 style="text-align:center;">User Registeration</h3><hr/>
+<form method="post">
+    <label>User Name: </label>
+        <input type="text" id="name" name="name" 
+        placeholder="Enter User Name" required minlength="3"/><br/>
+
+    <label>Password: </label>
+        <input type="password" id="password" name="password" placeholder="Enter password" 
+        required minlength="9"/><br/>
+
+    <label>State: </label>
+        <input type="text" id="state" name="state" /><br/>
+
+    <label>Refer Code: </label>
+        <input type="number" id="code" name="code"/><br/>
+
+    <label>Your Gender: </label>
+    <input type="radio" name="gender" value="female" checked>female
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="Prefer not to say">Prefer not to say
+    <br/>
+
+    <label>Choose Your Service</label>
+    <input type="checkbox" name="service" value="Tire rotation">Tire rotation
+    <input type="checkbox" name="service" value="Air filter" >Air filter
+    <input type="checkbox" name="service" value="Oil change" checked>Oil change
+    <input type="checkbox" name="service" value="Brake inspection" >Brake inspection
+    <input type="checkbox" name="service" value="Spark plugs" >Spark plugs
+    <br/>
+
+    <label>Have you been here before : </label>
+    <select name="customer">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    <br/>
+    <label>Comments</label>
+    <textarea rows = "5" cols="30"></textarea>
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
+
+</body>
+
+</html>
